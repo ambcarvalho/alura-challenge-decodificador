@@ -1,0 +1,239 @@
+body {
+  background-color: #F3F5FC;
+}
+
+.painel {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 0.2fr 2fr 0.7fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 7px;
+  grid-row-gap: 15px;
+  padding: 0;
+}
+
+.painel .logo-section{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  justify-items: start;
+  align-content: start;
+  align-items: start;
+  margin-top: 1em;
+  padding: 0;
+}
+
+.painel .logo{
+  display: flex;
+}
+
+.painel .user-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 4em;
+  height: 85%;
+}
+
+.painel .user-section input {
+  border: 0px;
+  background-color: #F3F5FC;
+  height: 48px;
+  font-weight: bold;
+  line-height: 48px;
+  font-size: 20px;
+  color: #0A3871 !important; 
+}
+
+.painel .user-section input:focus {
+  outline: none;
+}
+
+.painel .info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  justify-items: stretch;
+  text-align: start;
+  padding: 1em;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+.painel .info-section > * {
+  margin-top: 2rem;
+}
+
+.painel .info-section .info-text {
+  font-size: 1.4rem;
+  color: #495057;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.painel .empty{
+  display: flex;
+  justify-content: center !important;
+  text-align: center !important; 
+  padding: 0;
+}
+
+.painel .empty .info-text {
+  font-size: 0.9rem !important;
+  pointer-events:none;
+}
+
+.box-tip{
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+  align-content: center;
+}
+
+.tip{
+  font-size: 14px;
+  color: gray;
+  font-weight: 400;
+  margin-left: 0.5em;
+}
+
+.btn-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.btn-small{
+  display: block;
+  width: 10%;
+  min-width: 100px;
+  height: 35px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  background-color: #FFFFFF;
+  color: #FF0000 !important; 
+  border: 1px solid #FF0000 !important; 
+  margin: auto;
+}
+
+.btn{
+  display: block;
+  width: 40%;
+  height: 65px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+#btn-codificar{
+  background-color: #0A3871;
+  color: #FFFFFF;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+}
+
+#btn-decodificar{
+  background-color: #D8DFE8;
+  color: #0A3871;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.border{
+  border: 1px solid #0A3871;
+  border-radius: 50px;
+}
+
+.card{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #FFF;
+  border-radius: 5px;
+}
+
+.hide{
+  display: none;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  justify-content: start;
+  color: #000000;
+  font-size: 13px;
+  margin-top: 1em;
+  font-family: 'Poppins', sans-serif; 
+  margin: auto; 
+  padding: auto; 
+  box-sizing: border-box;
+  position: bottom;
+}
+
+@media screen and (max-width: 800px) {
+
+.painel {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.painel .logo-section{
+    display: flex;
+    flex: 1;
+    justify-content: start;
+    padding: 0.5em 0.5em;
+    margin-top: 0.5em;
+    margin-left: 1em;
+}
+
+.painel .user-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 100%;
+}
+
+.btn-group  {
+    margin: auto;
+}
+
+.btn-group #btn-limpar {
+    margin: 0 1em;
+  }
+
+#btn-codificar {
+  min-width: 100px;
+}
+
+#btn-decodificar {
+  min-width: 100px;
+}
+
+.painel .info-section{
+    display: flex !important;
+    text-align: center;
+    justify-content: space-around;
+    padding: 0.7em;
+    word-wrap: break-word;
+    margin: 0 1em;
+}
+
+  .painel .info-section #empty-image{
+    display: none;
+  }
+
+  footer {
+    width: 95vw;
+    padding-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+    position: bottom;
+  }
+}
