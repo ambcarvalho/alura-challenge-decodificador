@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+
+    <title>Decodificador Alura</title>
+</head>
+
+<body>
+
+    <div class="painel">
+
+        <div class="logo-section">
+            <img class="logo" src="assets/alura.svg" alt="logo alura"/>
+        </div>
+
+        <div class="user-section">
+
+            <input type="text" id="texto" placeholder="Digite seu texto" maxlength="100">
+
+            <div>
+
+                <div class="box-tip">
+                    <img src="assets/info.svg" alt="Informação">
+                    <span class="tip">Apenas letras minúsculas e sem acento.</span>
+                </div>
+
+                <div class="btn-group">
+                    <button id="btn-codificar" class="btn border">Codificar</button>
+                    <button id="btn-decodificar" class="btn border">Decodificar</button>
+                </div>
+
+                <div>
+                    <button id="btn-limpar" class="btn-small border">Limpar</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="info-section card empty">
+
+            <div class="empty-message">
+                <img id="empty-image" src="assets/people.svg" alt="" width="100%" />
+                <h3>Nenhuma mensagem encontrada</h3>
+            </div>
+
+            <p id="info-text" class="info-text" title="Toque para copiar!">
+                Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="icon">
+                <a target="blank" href="https://github.com/ambcarvalho"><i><img src="assets/github.png" alt="github " ></i></a>
+                <a target="blank" href="https://www.linkedin.com/in/angelomoises"><i><img src="assets/linkedin.png" alt="Linkedin" ></i></a>
+                
+                
+            </div>
+            <p>&copy;Ângelo Moisés - Decodificador Alura&trade;</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
